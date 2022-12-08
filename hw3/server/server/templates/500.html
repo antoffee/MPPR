@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERROR</title>
+    <style>
+      /* Add some padding on document's body to prevent the content to go underneath the header and footer */
+      body {
+        padding-top: 0;
+        margin: 0;
+        padding-bottom: 40px;
+      }
+
+      .fixed-header,
+      .fixed-footer {
+        width: 100%;
+        position: sticky;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+      }
+      .fixed-header {
+        top: 0;
+      }
+      .fixed-footer {
+        bottom: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-header">
+      <div class="container">
+        <h1>The error occurred</h1>
+      </div>
+    </div>
+    <div class="container">
+      <h2>
+        Model cannot detect what is on your image, please try with another one
+      </h2>
+      <a href="/">Try again</a>
+    </div>
+  </body>
+</html>
